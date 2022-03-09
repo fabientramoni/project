@@ -1,0 +1,45 @@
+html {
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  height: 100%;
+}
+
+/* TOUS LES ELEMENTS (pour le padding) */
+* {
+  box-sizing: border-box;
+}
+
+/* LE PREMIER BLOC VU */
+header {
+  min-height: 100%;
+  background-image: url("merci.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding-top: 15%;
+}
+
+@media all and (max-width: 1000px) {
+  .projet {
+    width: 100%;
+    margin: 15 px auto;
+  }
+  .projet img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+  }
+  .projet .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  header h2 {
+    width: 90%;
+  }
+}

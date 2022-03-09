@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire</title>
+    <link rel="stylesheet" type="text/css" href="design/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="formulaire">
+      <div class="formulaire">
+        <h1>Contactez-nous</h1>
+        <p>
+          Un problème, une question, envie de nous envoyer un message d’amour 😘
+          ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec
+          nous !
+        </p>
+        <form action="endformulaire.html">
+          <fieldset>
+            <div>
+              <label for="nom">Votre nom</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                placeholder="Martin"
+                required
+              />
+            </div>
+            <div>
+              <label for="email">Votre e-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="monadresse@mail.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="sujet">Quel est le sujet de votre message ?</label>
+              <select name="sujet" id="sujet" required>
+                <option value="" disabled selected hidden>
+                  Choisissez le sujet de votre message
+                </option>
+                <option value="probleme-compte">Demande de devis</option>
+                <option value="question-produit">Demande d'informations</option>
+                <option value="autre">Autre...</option>
+              </select>
+            </div>
+            <div>
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Envoyer mon message</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

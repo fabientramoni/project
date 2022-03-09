@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "theblacklist";
+  src: url("../src/theblacklist.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  background-color: #1d1d1d;
+  color: white;
+  padding-bottom: 30px;
+}
+
+nav {
+  text-align: center;
+  background: white;
+  box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+  font-size: 1.1em;
+  padding: 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f4f7f6;
+  margin: 0;
+}
+
+section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 10px;
+}
+
+h1 {
+  font-family: "theblacklist", sans-serif;
+
+  text-shadow: 3px 3px 3px rgb(207, 207, 207);
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+h1:hover {
+  color: red;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5em;
+  width: 400px;
+  margin: auto;
+}
+
+h3:before {
+  content: " « ";
+  color: grey;
+}
+
+h3:after {
+  content: " » ";
+  color: grey;
+}
+
+h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  padding: 0;
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin: 10px;
+}
+
+li:hover {
+  font-weight: bold;
+}
+/* ID (contener)*/
+#contact {
+  border: 1px black solid;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+#logo {
+  margin-top: 30px;
+  width: 50 px;
+}
+
+#projet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#picture-project img {
+  width: 50%;
+}
+
+#sound-project img {
+  width: 50%;
+}
+
+.formulaire {
+  display: inline-block;
+}
+
+/* classes */
+
+.separator {
+  width: 40px;
+  height: 1px;
+  margin: 15px auto;
+  display: block;
+  background-color: #999999;
+}
+.contener {
+  width: 80%;
+  margin: auto;
+}
+
+.projet {
+  width: 400px;
+  margin: 30px;
+  display: inline-block;
+  background-color: white;
+  padding-bottom: 15px;
+  border: 0px black solid;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.projet:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transition: 0.3s;
+}
+
+.projet img {
+  min-width: 400px;
+  height: 266px;
+}
+
+.projet span {
+  text-transform: uppercase;
+  display: block;
+}
+
+.projet .date-project {
+  font-size: 0.7em;
+}
+
+.picture {
+  width: 400px;
+  height: 266px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.picture-project img,
+.picture-project video {
+  width: 80%;
+}
+
+#formulaire {
+  content: center;
+  background-color: rgba(48, 47, 47, 0.2);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
+  margin-top: 0px;
+}
+
+#formulaire h1 {
+  color: rgb(78, 99, 156);
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger;
+}
+
+.contactez-nous {
+  width: 700px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 0 50px 0 50px;
+  background: white;
+}
+
+.contactez-nous > h1 {
+  font-weight: 500;
+}
+
+.contactez-nous > p {
+  font-weight: 300;
+}
+
+form div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 83px;
+  margin-top: 25px;
+}
+
+form div > label {
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+
+form div > input,
+form div > select,
+form div > textarea {
+  background: #436b72;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Montserrat, "sans-serif";
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div > input,
+form div > select {
+  height: 50px;
+  padding-left: 10px;
+}
+
+form div > select {
+  appearance: none;
+  background-size: 15px;
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+}
+
+form div > textarea {
+  height: 195px;
+  padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder,
+form div > textarea::placeholder {
+  color: white;
+}
+
+form div > select:invalid {
+  color: white;
+}
+
+form div > select option {
+  background: white;
+  color: #303030;
+}
+
+form div:last-child {
+  align-items: center;
+  margin-top: 20px;
+}
+
+form button {
+  width: 450px;
+  max-width: 500px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 28px;
+  background: white;
+  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #303030;
+}
+
+@media all and (max-width: 1000px) {
+  .projet {
+    width: 100%;
+    margin: 15 px auto;
+  }
+  .projet img {
+    width: 100%;
+    min-width: auto;
+    height: auto;
+  }
+  .projet .picture {
+    width: 100%;
+    height: auto;
+  }
+
+  header h2 {
+    width: 90%;
+  }
+}
